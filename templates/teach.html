@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Teach the Student</title>
-  <link rel="stylesheet" href="teach.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='teach.css') }}">
 </head>
 <body>
   <header>
@@ -23,14 +23,14 @@
     <h1>How would you like to teach the student?</h1>
     <div class="options-container">
       <div class="option" id="speak-btn">
-        <a href="speech.html">
-          <img src="images/mic.png " style="width:10em; height:10em;" alt="Speak icon">
+        <a href="/speech">
+          <img src="{{ url_for('static', filename='images/mic.png') }} " style="width:10em; height:10em;" alt="Speak icon">
           <p>Speak</p>
         </a>
       </div>
       <div class="option">
-        <a href="write.html">
-          <img src="images/type.png" alt="Type icon" id="type-input">
+        <a href="/write">
+          <img src="{{ url_for('static', filename='images/type.png') }}" alt="Type icon" id="type-input">
           <p>Type</p>
         </a>
       </div>
