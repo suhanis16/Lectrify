@@ -1,0 +1,284 @@
+/* Reset styles */
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff; /* Text color is now white */
+  background-color: #000; /* Background color is now black */
+  scroll-behavior: smooth; /* Add smooth scrolling */
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+/* Header styles */
+header {
+  background-color: #008080; /* Teal */
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  font-family: Orbitron;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000; /* Change text color to black on hover */
+}
+
+/* Hero section styles */
+#hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Orbitron;
+}
+
+#hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  animation: slide-up 1s ease-in-out;
+}
+
+#hero p {
+  font-size: 24px;
+  margin-bottom: 40px;
+  animation: slide-up 1s ease-in-out 0.5s;
+}
+
+.button {
+  display: block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease-in-out;
+  animation: slide-up 1s ease-in-out 1s;
+}
+
+.button:hover {
+  background-color: #000; /* Change button background color to black on hover */
+  color: #fff; /* Change button text color to white on hover */
+}
+
+/* Courses section styles */
+#courses {
+  padding: 50px;
+}
+
+#courses h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-align: center;
+  animation: slide-up 1s ease-in-out;
+}
+
+.course {
+  margin-bottom: 40px;
+  animation: slide-up 1s ease-in-out;
+}
+
+.course img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.course h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.course p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+footer p {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #008080; /* Change link color to Teal on hover */
+}
+
+#animation-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+.input-container select {
+  cursor: pointer;
+}
+
+@keyframes quiet {
+    25%{
+      transform: scaleY(.6);
+    }
+    50%{
+      transform: scaleY(.4);
+    }
+    75%{
+      transform: scaleY(.8);
+    }
+  }
+  
+  @keyframes normal {
+    25%{
+      transform: scaleY(1);
+    }
+    50%{
+      transform: scaleY(.4);
+    }
+    75%{
+      transform: scaleY(.6);
+    }
+  }
+  @keyframes loud {
+    25%{
+      transform: scaleY(1);
+    }
+    50%{
+      transform: scaleY(.4);
+    }
+    75%{
+      transform: scaleY(1.2);
+    }
+  }
+  body{
+    display: flex;
+    justify-content: center;
+    background: black;
+    margin: 0;padding: 0;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .boxContainer{
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    --boxSize: 8px;
+    --gutter: 5px;
+    width: calc((var(--boxSize) + var(--gutter)) * 5);
+  }
+  
+  .box{
+    transform: scaleY(.4);
+    height: 100%;
+    width: var(--boxSize);
+    background: #10d2cbb3;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    border-radius: 15px;
+  }
+  
+  .box1{
+    animation-name: quiet;
+  }
+  
+  .box2{
+    animation-name: normal;
+  }
+  
+  .box3{
+    animation-name: quiet;
+  }
+  
+  .box4{
+    animation-name: loud;
+  }
+  
+  .box5{
+    animation-name: quiet;
+  }
+
+  .box6{
+    animation-name: normal;
+  }
+  
+  .box7{
+    animation-name: quiet;
+  }
+
+  .elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
