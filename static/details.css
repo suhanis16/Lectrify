@@ -8,6 +8,10 @@ body {
     color: #000;
 }
 
+h1{
+    font-weight: bold;
+}
+
 .student-profile .card {
     border-radius: 10px;
 }
