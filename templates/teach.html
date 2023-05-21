@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Teach the Student</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='teach.css') }}">
+  <link rel="stylesheet" href="../static/teach.css">
 </head>
 <body>
   <header>
@@ -24,13 +24,13 @@
     <div class="options-container">
       <div class="option" id="speak-btn">
         <a href="/speech">
-          <img src="{{ url_for('static', filename='images/mic.png') }} " style="width:10em; height:10em;" alt="Speak icon">
+          <img src="../static/images/mic.png" style="width:10em; height:10em;" alt="Speak icon">
           <p>Speak</p>
         </a>
       </div>
       <div class="option">
         <a href="/write">
-          <img src="{{ url_for('static', filename='images/type.png') }}" alt="Type icon" id="type-input">
+          <img src="../static/images/type.png" alt="Type icon" id="type-input">
           <p>Type</p>
         </a>
       </div>
@@ -41,6 +41,6 @@
     <p>&copy; 2023 Lectrify. All rights reserved.</p>
   </footer>
 
-  <script src="teach.js"></script>  
+  <script src="../static/teach.js"></script>  
 </body>
 </html>
