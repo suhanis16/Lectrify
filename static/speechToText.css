@@ -1,0 +1,80 @@
+
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+    
+body {
+  background: #67B26F;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: black;
+  font-family: 'Righteous';
+  font-size: 18px;
+}
+
+
+.chat-window {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  overflow-y: scroll; /* Add a scroll bar */
+  max-height: 300px; /* Set a fixed height */
+}
+
+.chat-message {
+  margin-bottom: 10px;
+}
+
+.chat-message.user {
+  text-align: right;
+}
+
+.chat-message.user .message-content {
+  background-color: #2e7d32;
+  color: #fff;
+}
+
+.chat-message.bot .message-content {
+  background-color: #283593;
+  color: #fff;
+}
+
+.message-content {
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+.voice-button {
+  display: inline-block;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.voice-button:focus {
+  outline: none;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-input {
+  margin-top: 10px;
+}
+
+.chat-input input {
+  width: 87%;
+  padding: 5px;
+  font-size: 16px;
+}

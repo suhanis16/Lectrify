@@ -8,17 +8,22 @@
 
 /* Global styles */
 body {
-  font-family: Righteous;
+  font-family: "Righteous";
   font-weight: normal;
   font-size: 16px;
   line-height: 1.5;
-  color: #fff; /* Text color is now white */
-  background-color: #000; /* Background color is now black */
+  color: #000;
+  /*color: #fff; /* Text color is now white */
+  background: #67B26F;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /*background-color: #000; /* Background color is now black */
   scroll-behavior: smooth; /* Add smooth scrolling */
 }
 
 a {
-  color: #fff;
+  /*color: #fff; */
+  color: #000;
   text-decoration: none;
 }
 
@@ -32,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Header styles */
 header {
-  background-color: #008080; /* Teal */
+  background-color: #043b3b; /* Teal */
   padding: 10px;
   position: fixed;
   top: 0;
