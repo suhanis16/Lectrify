@@ -9,6 +9,13 @@
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+  <!-- JavaScript -->
+<script src="../static/Signup.js"></script>
+<script>
+  function goToPage() {
+      window.location.href = "choose.html";}
+</script>
+
 <section class="container forms">
   <div class="form login">
     <div class="form-content">
@@ -28,7 +35,8 @@
         </div>
 
         <div class="field button-field">
-          <button>Login</button>
+          <button onclick="goToPage()" id="loginbutton">Login</button>
+          <!-- <a href="choose.html" class="button">Login</a> -->
         </div>
       </form>
 
@@ -107,8 +115,6 @@
   </div>
 </section>
 
-<!-- JavaScript -->
-<script src="../static/Signup.js"></script>
 
 
 </body>
