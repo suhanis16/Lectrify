@@ -25,15 +25,17 @@ def speech():
 def details():
     return render_template('details.html')
 
-@app.route('/speechToText')
+@app.route('/speechToText2')
 def speechToText():
-    return render_template('speechToText.html')
+    return render_template('speechToText2.html')
 
 @app.route('/choose')
 def choose():
     return render_template('choose.html')
 
-
+@app.route('/home')
+def home():
+    return render_template('home.html')
 
 
 @app.route('/write', methods=['GET', 'POST'])
