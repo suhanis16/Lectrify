@@ -25,10 +25,6 @@ def speech():
 def details():
     return render_template('details.html')
 
-@app.route('/speechToText2')
-def speechToText():
-    return render_template('speechToText2.html')
-
 @app.route('/choose')
 def choose():
     return render_template('choose.html')
@@ -38,13 +34,13 @@ def home():
     return render_template('home.html')
 
 
-@app.route('/write', methods=['GET', 'POST'])
+@app.route('/speechToText2', methods=['GET', 'POST'])
 def write():
     if request.method == 'POST':
-        user_input = request.form['subject']
+        user_input = request.form['message']
         questions = get_json(user_input)
         return questions
-    return render_template('write.html')
+    return render_template('speechToText2.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

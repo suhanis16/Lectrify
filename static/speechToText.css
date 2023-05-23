@@ -55,7 +55,21 @@ body {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+  margin-top: 10px;
 }
+
+.submit-button {
+  display: inline-block;
+  background-color: #283593;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
 
 .voice-button:focus {
   outline: none;
